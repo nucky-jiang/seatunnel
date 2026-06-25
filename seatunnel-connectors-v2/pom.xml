@@ -35,11 +35,7 @@
         <module>connector-jdbc</module>
         <module>connector-kafka</module>
         <module>connector-hudi</module>
-        <module>connector-elasticsearch</module>
-        <module>connector-neo4j</module>
-        <module>connector-iceberg</module>
         <module>connector-starrocks</module>
-        <module>connector-prometheus</module>
     </modules>
 
     <dependencyManagement>
