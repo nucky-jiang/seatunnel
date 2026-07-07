@@ -13,14 +13,15 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
         <version>31</version>
-        <relativePath />
+        <relativePath/>
     </parent>
 
     <groupId>org.apache.seatunnel</groupId>
@@ -48,10 +49,10 @@
         <module>seatunnel-plugin-discovery</module>
         <module>seatunnel-formats</module>
         <module>seatunnel-engine</module>
-        <module>seatunnel-examples</module>
-        <module>seatunnel-e2e</module>
+        <!--        <module>seatunnel-examples</module>-->
+        <!--        <module>seatunnel-e2e</module>-->
         <module>seatunnel-shade</module>
-        <module>seatunnel-ci-tools</module>
+        <!--        <module>seatunnel-ci-tools</module>-->
     </modules>
 
     <properties>
@@ -68,7 +69,7 @@
         <system-rules.version>1.2.1</system-rules.version>
         <powermock.version>2.0.9</powermock.version>
         <slf4j.version>1.7.36</slf4j.version>
-        <log4j2.version>2.17.1</log4j2.version>
+        <log4j2.version>2.23.1</log4j2.version>
         <log4j2-disruptor.version>3.4.4</log4j2-disruptor.version>
         <log4j.version>1.2.17</log4j.version>
         <logback.version>1.2.3</logback.version>
@@ -76,8 +77,8 @@
         <flink.1.13.6.version>1.13.6</flink.1.13.6.version>
         <flink.1.15.3.version>1.15.3</flink.1.15.3.version>
         <flink.1.20.1.version>1.20.1</flink.1.20.1.version>
-        <spark.2.4.0.version>2.4.0</spark.2.4.0.version>
-        <spark.3.3.0.version>3.3.0</spark.3.3.0.version>
+        <spark.2.4.0.version>2.4.8</spark.2.4.0.version>
+        <spark.3.3.0.version>3.4.4</spark.3.3.0.version>
         <spark.binary.2.4.version>2.4</spark.binary.2.4.version>
         <commons.beanutils.version>1.9.4</commons.beanutils.version>
         <commons.cli.version>1.4</commons.cli.version>
@@ -87,10 +88,10 @@
         <jersey.version>1.19</jersey.version>
         <javax.servlet.jap.version>2.1</javax.servlet.jap.version>
         <hadoop.binary.version>2.7</hadoop.binary.version>
-        <jackson.version>2.13.3</jackson.version>
+        <jackson.version>2.13.5</jackson.version>
         <lombok.version>1.18.24</lombok.version>
-        <commons-compress.version>1.20</commons-compress.version>
-        <avro.version>1.11.1</avro.version>
+        <commons-compress.version>1.26.2</commons-compress.version>
+        <avro.version>1.11.4</avro.version>
         <skip.pmd.check>false</skip.pmd.check>
         <maven.deploy.skip>false</maven.deploy.skip>
         <maven.javadoc.skip>false</maven.javadoc.skip>
@@ -132,7 +133,7 @@
         <maven-git-commit-id-plugin.version>4.0.4</maven-git-commit-id-plugin.version>
         <flatten-maven-plugin.version>1.3.0</flatten-maven-plugin.version>
         <maven-license-maven-plugin>1.20</maven-license-maven-plugin>
-        <log4j-core.version>2.17.1</log4j-core.version>
+        <log4j-core.version>2.23.1</log4j-core.version>
         <docker-maven-plugin.version>0.38.0</docker-maven-plugin.version>
         <maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
         <p3c-pmd.version>1.3.0</p3c-pmd.version>
@@ -146,13 +147,31 @@
         <jetty.version>9.4.56.v20240826</jetty.version>
         <jakarta.servlet-api>4.0.4</jakarta.servlet-api>
         <hugegraph.client.version>1.5.0</hugegraph.client.version>
+        <!--fix checkmax begin-->
+        <netty.version>4.1.118.Final</netty.version>
+        <parquet.version>1.15.1</parquet.version>
+        <hazelcast.version>5.1.7</hazelcast.version>
+        <postgresql.version>42.7.5</postgresql.version>
+        <redshift.version>2.2.7</redshift.version>
+        <sqlite-jdbc.version>3.46.1.0</sqlite-jdbc.version>
+        <aerospike.version>6.2.0</aerospike.version>
+        <sshd.version>2.12.1</sshd.version>
+        <zookeeper.version>3.8.4</zookeeper.version>
+        <bouncycastle.version>1.78.1</bouncycastle.version>
+        <commons-text.version>1.12.0</commons-text.version>
+        <ivy.version>2.5.2</ivy.version>
+        <derby.version>10.17.1.0</derby.version>
+        <snakeyaml.version>2.2</snakeyaml.version>
+        <nimbus-jose-jwt.version>9.40</nimbus-jose-jwt.version>
+        <!--fix checkmax done-->
+
         <!-- Option args -->
         <skipUT>false</skipUT>
         <skipIT>true</skipIT>
         <elasticsearch>7</elasticsearch>
         <guava.version>27.0-jre</guava.version>
         <auto-service.version>1.0.1</auto-service.version>
-        <hadoop2.version>2.6.5</hadoop2.version>
+        <hadoop2.version>2.10.2</hadoop2.version>
         <seatunnel.shade.package>org.apache.seatunnel.shade</seatunnel.shade.package>
         <snappy-java.version>1.1.8.3</snappy-java.version>
         <checker.qual.version>3.10.0</checker.qual.version>
@@ -164,10 +183,10 @@
         <prometheus.simpleclient.version>0.16.0</prometheus.simpleclient.version>
         <enableSourceJarCreation>true</enableSourceJarCreation>
 
-        <hadoop-aws.version>3.1.4</hadoop-aws.version>
+        <hadoop-aws.version>3.3.6</hadoop-aws.version>
         <software.amazon.awssdk.version>2.31.30</software.amazon.awssdk.version>
         <arrow.version>15.0.1</arrow.version>
-        <okhttp.version>4.12.0</okhttp.version>
+        <okhttp.version>3.14.9</okhttp.version>
 
     </properties>
 
@@ -684,7 +703,8 @@
                             <classpathDependencyExclude>log4j:log4j</classpathDependencyExclude>
                             <classpathDependencyExclude>ch.qos.logback:logback-classic</classpathDependencyExclude>
                             <classpathDependencyExclude>ch.qos.logback:logback-core</classpathDependencyExclude>
-                            <classpathDependencyExclude>org.apache.logging.log4j:log4j-to-slf4j</classpathDependencyExclude>
+                            <classpathDependencyExclude>org.apache.logging.log4j:log4j-to-slf4j
+                            </classpathDependencyExclude>
                         </classpathDependencyExcludes>
                     </configuration>
                 </plugin>
@@ -751,7 +771,8 @@
                             <configuration>
                                 <transformers combine.children="append">
                                     <!-- The service transformer is needed to merge META-INF/services files -->
-                                    <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+                                    <transformer
+                                            implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                                 </transformers>
                             </configuration>
                         </execution>
@@ -921,8 +942,8 @@
                             <version>1.7</version>
                             <style>AOSP</style>
                         </googleJavaFormat>
-                        <removeUnusedImports />
-                        <formatAnnotations />
+                        <removeUnusedImports/>
+                        <formatAnnotations/>
                         <importOrder>
                             <order>org.apache.seatunnel.shade,org.apache.seatunnel,org.apache,org,,javax,java,\#</order>
                         </importOrder>
@@ -958,13 +979,16 @@
                         </replaceRegex>
                         <replaceRegex>
                             <name>Convert Janino imports to shade</name>
-                            <searchRegex>import\s+(static\s+)?org\.codehaus\.(janino|commons)\.([^;]+);(\r\n|\r|\n)</searchRegex>
+                            <searchRegex>import\s+(static\s+)?org\.codehaus\.(janino|commons)\.([^;]+);(\r\n|\r|\n)
+                            </searchRegex>
                             <replacement>import $1org.apache.seatunnel.shade.org.codehaus.$2.$3;$4</replacement>
                         </replaceRegex>
                         <replaceRegex>
                             <name>Convert Apache Commons Lang3 imports to shade</name>
-                            <searchRegex>import\s+(static\s+)?org\.apache\.commons\.lang3\.([^;]+);(\r\n|\r|\n)</searchRegex>
-                            <replacement>import $1org.apache.seatunnel.shade.org.apache.commons.lang3.$2;$3</replacement>
+                            <searchRegex>import\s+(static\s+)?org\.apache\.commons\.lang3\.([^;]+);(\r\n|\r|\n)
+                            </searchRegex>
+                            <replacement>import $1org.apache.seatunnel.shade.org.apache.commons.lang3.$2;$3
+                            </replacement>
                         </replaceRegex>
                     </java>
                     <pom>

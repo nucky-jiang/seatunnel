@@ -34,7 +34,7 @@
         <module>seatunnel-janino</module>
         <module>seatunnel-scala-compiler</module>
         <module>seatunnel-jetty9-9.4.56</module>
-        <module>seatunnel-hadoop-aws</module>
+<!--        <module>seatunnel-hadoop-aws</module>-->
         <module>seatunnel-arrow</module>
         <module>seatunnel-hikari</module>
         <module>seatunnel-commons-lang3</module>

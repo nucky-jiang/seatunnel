@@ -1046,13 +1046,13 @@
                     <scope>provided</scope>
                 </dependency>
 
-                <dependency>
-                    <groupId>org.apache.seatunnel</groupId>
-                    <artifactId>seatunnel-hadoop-aws</artifactId>
-                    <version>${project.version}</version>
-                    <classifier>optional</classifier>
-                    <scope>provided</scope>
-                </dependency>
+<!--                <dependency>-->
+<!--                    <groupId>org.apache.seatunnel</groupId>-->
+<!--                    <artifactId>seatunnel-hadoop-aws</artifactId>-->
+<!--                    <version>${project.version}</version>-->
+<!--                    <classifier>optional</classifier>-->
+<!--                    <scope>provided</scope>-->
+<!--                </dependency>-->
             </dependencies>
             <build>
                 <finalName>apache-seatunnel-${project.version}</finalName>
